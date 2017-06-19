@@ -3,6 +3,17 @@
  * 
  */
 
-function GameController() {
-    //TODO
+function GameController(panel) {
+    return {
+        window: GameWindow(panel),
+
+        //Check for collisions
+        checkCollisions: function () {
+
+        },
+
+        step: function () {
+
+        }
+    }
 }

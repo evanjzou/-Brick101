@@ -48,6 +48,10 @@ function generateBricks (panel) {
 function GameWindow (panel) {
     return {
         bricks: generateBricks(panel),
-        ball: Ball(panel, BALL_START_X, BALL_START_Y)
+        ball: {
+            obj: Ball(panel, BALL_START_X, BALL_START_Y),
+            x_vel: BALL_X_VEL,
+            y_vel: BALL_Y_VEL
+        }
     }
 }

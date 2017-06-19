@@ -29,3 +29,9 @@ var BALL_START_X = 300;
 
 //Starting y coordinate of ball
 var BALL_START_Y = 400;
+
+//Starting x velocity of the ball
+var BALL_X_VEL = 0;
+
+//Starting y velocity of the ball
+var BALL_Y_VEL = 0;
