@@ -23,3 +23,9 @@ var EDGE_OFFSET = 2;
 
 //Distance from center of top row of bricks and top
 var TOP_OFFSET = 75;
+
+//Starting x coordinate of ball
+var BALL_START_X = 300;
+
+//Starting y coordinate of ball
+var BALL_START_Y = 400;

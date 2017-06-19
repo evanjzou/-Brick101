@@ -34,7 +34,7 @@ function generateBricks (panel) {
             row++;
             column = 0;
             xpos = EDGE_OFFSET;
-            ypos = ypos + BRICK_HEIGHT;
+            ypos = ypos + BRICK_HEIGHT + BRICK_SEPARATION;
         }
         else {
             //alert("in else");
@@ -43,4 +43,11 @@ function generateBricks (panel) {
         }
     }
     return bricks;
+}
+
+function GameWindow (panel) {
+    return {
+        bricks: generateBricks(panel),
+        ball: Ball(panel, BALL_START_X, BALL_START_Y)
+    }
 }
