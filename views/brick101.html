@@ -3,22 +3,59 @@
 
 
 <!DOCTYPE html>
-<html>
-
-<head>
-<title> Brick101 </title>>
-</head>
-
-
-<link
-href = "/style.css" type = "text/css" rel = "stylesheet"
-/>
-
-<body> 
-
-<script type="main.js"> </script>>
-
-
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:vml="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>JSGL empty page template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <!--[if vml]><style>vml\:* {behavior: url(#default#VML);}</style><![endif]-->
+    <script type="text/javascript" src="../src/jsgl.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  </head>
+  <body>
+    <div id="panel"></div>
+    <!--script type="text/javascript">
+      /* Instantiate JSGL Panel. */
+      myPanel = new jsgl.Panel(document.getElementById("panel"));
+ 
+      /* Start drawing! */
+ 
+      /* Create circle and modify it */
+      circle = myPanel.createCircle();
+      circle.setCenterLocationXY(50,50);
+      circle.setRadius(30);
+      circle.getStroke().setWeight(5);
+      circle.getStroke().setColor("rgb(255,0,0)");
+      myPanel.addElement(circle);
+ 
+      /* Create polygon and modify it */
+      polygon = myPanel.createPolygon();
+      polygon.addPointXY(50,50);
+      polygon.addPointXY(110,50);
+      polygon.addPointXY(150,80);
+      polygon.addPointXY(110,110);
+      polygon.addPointXY(50,110);
+      polygon.getStroke().setWeight(5);
+      polygon.getStroke().setColor("rgb(0,0,255)");
+      polygon.getFill().setColor("rgb(0,255,0)");
+      polygon.getFill().setOpacity(0.5);
+      myPanel.addElement(polygon);
+ 
+      /* Create text label and modify it */
+      label = myPanel.createLabel();
+      label.setText("Hello World!");
+      label.setLocationXY(30,120);
+      label.setBold(true);
+      label.setFontFamily("sans-serif");
+      label.setFontSize(24);
+      myPanel.addElement(label);
+ 
+    </script-->
+    <script type="text/javascript" src="../src/model/constants.js"></script>
+    <script type="text/javascript" src="../src/model/brick.js"></script>
+    <script type="text/javascript" src="../src/main.js"></script>
+  </body>
 </html>
 
