@@ -3,6 +3,6 @@
  * 
  */
 
-export function GameController() {
+function GameController() {
     //TODO
 }

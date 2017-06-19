@@ -33,12 +33,14 @@ circle.getStroke().setWeight(5);
 circle.getStroke().setColor("rgb(255,0,0)");
 myPanel.addElement(circle);
 
-var myRect = myPanel.createRectangle();
+/*var myRect = myPanel.createRectangle();
 myPanel.addElement(myRect);
 myRect.setLocationXY(125,75);
-myRect.setSizeWH(60, 20);
+myRect.setSizeWH(60, 20); 
 
 var b1 = Brick(myPanel, 200, 200);
-var b2 = Brick(myPanel, 250, 250);
+var b2 = Brick(myPanel, 250, 250); */
 
-var ball = Ball(myPanel, 300, 100);
+//var ball = Ball(myPanel, 300, 100);
+
+var bricks = generateBricks(myPanel);
