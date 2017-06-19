@@ -12,6 +12,7 @@ function GameController(panel) {
 
         },
 
+        //Executes movement of the ball after processing collisions
         step: function () {
 
         }
