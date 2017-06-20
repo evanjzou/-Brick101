@@ -47,3 +47,6 @@ var PADDLE_X = 300;
 
 //Paddle starting y
 var PADDLE_Y = 550;
+
+//Mouse offset constant
+var MOUSE_OFFSET = 1;

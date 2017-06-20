@@ -45,4 +45,31 @@ var b2 = Brick(myPanel, 250, 250);
 
 var bricks = generateBricks(myPanel); */
 
-var win = GameWindow(myPanel);
+var control = GameController(myPanel);
+
+
+
+/*window.addEventListener("keydown", function (event) {
+	alert("keydown");
+	if (event.keyCode == 37) {
+		//Left key
+		control.move_left = true;
+	}
+	else if (event.keyCode == 39) {
+		control.move_right = true;
+	}
+});
+
+window.addEventListener('click', function () {
+	while (true) {
+		control.step();
+	}
+}); */
+
+myPanel.addMouseMoveListener(function (args) {
+	control.window.paddle.setX(args.getX() + MOUSE_OFFSET);
+})
+
+myPanel.addClickListener(function (args) {
+	control.start();
+})
