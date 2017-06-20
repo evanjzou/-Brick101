@@ -7,7 +7,7 @@ function GameController(panel) {
     return {
         window: GameWindow(panel),
 
-        //Check for collisions
+        //Check for collisions and remove necessary bricks
         checkCollisions: function () {
 
         },

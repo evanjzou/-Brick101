@@ -45,6 +45,16 @@ function generateBricks (panel) {
     return bricks;
 }
 
+//Paddle object
+function Paddle (panel, xpos, ypos) {
+    var paddle = panel.createRectangle();
+    panel.addElement(paddle);
+    paddle.setHorizontalAnchor(jsgl.HorizontalAnchor.CENTER);
+    paddle.setLocationXY(xpos, ypos);
+    paddle.setSizeWH(PADDLE_WIDTH, PADDLE_HEIGHT);
+    return paddle;
+}
+
 function GameWindow (panel) {
     return {
         bricks: generateBricks(panel),
@@ -52,6 +62,8 @@ function GameWindow (panel) {
             obj: Ball(panel, BALL_START_X, BALL_START_Y),
             x_vel: BALL_X_VEL,
             y_vel: BALL_Y_VEL
-        }
+        },
+
+        paddle: Paddle(panel, PADDLE_X, PADDLE_Y)
     }
 }

@@ -26,7 +26,7 @@ function init() {
 }); */
 
 myPanel = new jsgl.Panel(document.getElementById("panel"));
-circle = myPanel.createCircle();
+/*circle = myPanel.createCircle();
 circle.setCenterLocationXY(300,300);
 circle.setRadius(30);
 circle.getStroke().setWeight(5);
@@ -39,8 +39,10 @@ myRect.setLocationXY(125,75);
 myRect.setSizeWH(60, 20); 
 
 var b1 = Brick(myPanel, 200, 200);
-var b2 = Brick(myPanel, 250, 250); */
+var b2 = Brick(myPanel, 250, 250); 
 
 //var ball = Ball(myPanel, 300, 100);
 
-var bricks = generateBricks(myPanel);
+var bricks = generateBricks(myPanel); */
+
+var win = GameWindow(myPanel);

@@ -31,7 +31,19 @@ var BALL_START_X = 300;
 var BALL_START_Y = 400;
 
 //Starting x velocity of the ball
-var BALL_X_VEL = 0;
+var BALL_X_VEL = 5;
 
 //Starting y velocity of the ball
-var BALL_Y_VEL = 0;
+var BALL_Y_VEL = 5;
+
+//Paddle width
+var PADDLE_WIDTH = 100;
+
+//Paddle height
+var PADDLE_HEIGHT = 10;
+
+//Paddle starting x
+var PADDLE_X = 300;
+
+//Paddle starting y
+var PADDLE_Y = 550;
